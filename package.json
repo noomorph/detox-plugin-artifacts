@@ -1,0 +1,22 @@
+{
+  "name": "detox-plugin-artifacts",
+  "version": "1.0.0",
+  "description": "Adds artifact recording capability to Detox",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noomorph/detox-plugin-artifacts.git"
+  },
+  "keywords": [
+    "detox"
+  ],
+  "author": "Yaroslav Serhieiev <noomorph@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noomorph/detox-plugin-artifacts/issues"
+  },
+  "homepage": "https://github.com/noomorph/detox-plugin-artifacts#readme"
+}
