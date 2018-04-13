@@ -1,5 +1,4 @@
 declare module "detox" {
-
     type DetoxParameterMetadata<T> = {
         readonly camelCaseName: string;
         readonly description?: string;
@@ -18,12 +17,18 @@ declare module "detox" {
     };
 
     type DetoxDeviceContext = {
+        plugins: Record<string, any>;
+    };
+
+    type DetoxConfiguration = {
+
     };
 
     interface DetoxBehaviorPluginAPI {
         registerParameter(parameterMetadata: DetoxParameterMetadata<any>): void;
         getCurrentTestContext(): Readonly<DetoxTestContext> | null;
-        getCurrentDeviceContext(): Readonly<DetoxDeviceContext> | null;
+        getDevice(): Readonly<DetoxDeviceContext>;
+        getConfiguration(): Readonly<DetoxConfiguration>;
     }
 
     interface DetoxBehaviorPlugin {
